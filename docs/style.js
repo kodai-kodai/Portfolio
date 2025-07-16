@@ -59,6 +59,8 @@ $('.works').slick({
     autoplay: true,
     autoplaySpeed: 2500,
 });
+
+
 const hoverIcon = document.getElementById("hoverIcon");
 const skillLinks = document.querySelectorAll("#skillCon a");
 

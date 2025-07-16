@@ -11,10 +11,9 @@
     height: 100%;
     font-family: Arial, sans-serif;
     background-color: rgb(178, 178, 178);
-    /* background-image: url(../WIN_20250603_15_09_35_Pro.jpg); */
-    background-image: url(./背景.JPG);
     background-image: url(./img/1750845325733_6e3c6g_2_0.jpg);
     background-size: cover;
+    /* zoom: 0.7; */
 }
 
 
@@ -27,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 
@@ -40,7 +39,7 @@
     transform: translate(-50%, -50%);
     width: max-content;
     text-align: center;
-    font-size: 7.5rem;
+    font-size: 5.5rem;
     pointer-events: none;
     font-family: 'Inter Medium', 'Noto Sans JP', serif;
 
@@ -124,26 +123,26 @@ nav a {
     color: #fff;
     font-weight: bold;
     text-shadow:
-        3px 3px 0 rgba(0, 0, 0, 0.25),
-        -3px 3px 0 rgba(0, 0, 0, 0.25),
-        3px -3px 0 rgba(0, 0, 0, 0.25),
-        -3px -3px 0 rgba(0, 0, 0, 0.25),
-        3px 0px 0 rgba(0, 0, 0, 0.25),
-        -3px 0px 0 rgba(0, 0, 0, 0.25),
-        0px 3px 0 rgba(0, 0, 0, 0.25),
-        0px -3px 0 rgba(0, 0, 0, 0.25);
+        2px 2px 0 rgba(0, 0, 0, 0.25),
+        -2px 2px 0 rgba(0, 0, 0, 0.25),
+        2px -2px 0 rgba(0, 0, 0, 0.25),
+        -2px -2px 0 rgba(0, 0, 0, 0.25),
+        2px 0px 0 rgba(0, 0, 0, 0.25),
+        -2px 0px 0 rgba(0, 0, 0, 0.25),
+        0px 2px 0 rgba(0, 0, 0, 0.25),
+        0px -2px 0 rgba(0, 0, 0, 0.25);
 }
 
 #header-menu {
     /*最初はナビゲーションボタンは非表示*/
     display: none;
-    font-size: 2rem;
-    margin: 0 2rem 0 2rem;
+    font-size: 1rem;
+    margin: 0 2rem 0 1rem;
 }
 
 .header_li {
     padding: 8px;
-    font-size: 3rem;
+    font-size: 2rem;
     display: block;
     text-align: left;
 
@@ -162,9 +161,9 @@ footer {
 .hamburger {
     position: fixed;
     top: 40px;
-    right: 100px;
+    right: 80px;
     cursor: pointer;
-    width: 60px;
+    width: 50px;
     height: 100px;
     z-index: 10;
 }
@@ -213,7 +212,7 @@ footer {
 }
 
 main {
-    margin-top: 15.2rem;
+    margin-top: 12.2rem;
     text-align: center;
     color: #fff;
     padding: 2rem;
@@ -221,13 +220,13 @@ main {
 
 section {
     border-radius: 3px;
-    max-width: 75%;
+    max-width: 76.5%;
     margin: auto;
 
 }
 
 section h2 {
-    font-size: 80px;
+    font-size: 55px;
     font-family: 'Inter SemiBold', 'Noto Sans JP', serif;
 }
 
@@ -261,13 +260,14 @@ section h2 {
 
 
 #skillCon {
+    position: relative;
     margin-bottom: 0;
     border-bottom: none;
 }
 
 #file_img {
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 400px;
     object-fit: cover;
     object-position: center;
     margin: 20px;
@@ -278,19 +278,19 @@ section h2 {
 p,
 ul {
     text-shadow:
-        2px 2px 0 rgba(0, 0, 0, 0.25),
-        -2px 2px 0 rgba(0, 0, 0, 0.25),
-        2px -2px 0 rgba(0, 0, 0, 0.25),
-        -2px -2px 0 rgba(0, 0, 0, 0.25),
-        2px 0px 0 rgba(0, 0, 0, 0.25),
-        -2px 0px 0 rgba(0, 0, 0, 0.25),
-        0px 2px 0 rgba(0, 0, 0, 0.25),
-        0px -2px 0 rgba(0, 0, 0, 0.25);
+        1.6px 1.6px 0 rgba(0, 0, 0, 0.25),
+        -1.6px 1.6px 0 rgba(0, 0, 0, 0.25),
+        1.6px -1.6px 0 rgba(0, 0, 0, 0.25),
+        -1.6px -1.6px 0 rgba(0, 0, 0, 0.25),
+        1.6px 0px 0 rgba(0, 0, 0, 0.25),
+        -1.6px 0px 0 rgba(0, 0, 0, 0.25),
+        0px 1.6px 0 rgba(0, 0, 0, 0.25),
+        0px -1.6px 0 rgba(0, 0, 0, 0.25);
     line-height: 2;
 }
 
 #Profile p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Inter Medium', 'Noto Sans JP', serif;
     margin: 20px;
     margin-top: 1rem;
@@ -299,7 +299,7 @@ ul {
 }
 
 #myName {
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 
@@ -311,21 +311,22 @@ ul {
 }
 
 .content p {
-    font-size: 2rem;
-    margin: 2rem 3rem 0 5rem;
+    font-size: 1.5rem;
+    margin: 2rem 0 0 5rem;
 }
 
 .content ul {
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: .3s;
     /* リストを表示できるようにする */
     /* overflow: visible; */
-    margin: 2rem 3rem 1rem 30px;
+    margin: 1rem 3rem 1rem 10px;
 }
 
 .content li {
     margin: 15px;
-    position: relative; /* これが基準になる */
+    position: relative;
+    /* これが基準になる */
 }
 
 
@@ -336,13 +337,17 @@ ul {
 }
 
 #hoverIcon {
-    position:fixed;         /* 画面上で固定 */
-    top: 32%;                /* 表示位置（調整可） */
-    right: 20%;               /* 表示位置（調整可） */
-    width: 40rem;
-    height: 20rem;
+    /* 画面上で固定 */
+    position: absolute;
+    /* 表示位置（調整可） */
+    top: 13%;
+    /* 表示位置（調整可） */
+    right: 10%;
+    width: 30rem;
+    height: 17rem;
     opacity: 0;
-    pointer-events: none;    /* マウス操作の邪魔をしない */
+    pointer-events: none;
+    /* マウス操作の邪魔をしない */
     transition: opacity 0.3s ease;
     z-index: 100;
 }
@@ -364,7 +369,7 @@ ul {
 .hobby_img {
     display: flex;
     /* margin: auto; */
-    margin-left: 3rem;
+    margin-left: 30px;
     align-items: center;
 
 }
@@ -377,9 +382,9 @@ ul {
         border 0.17s cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 0.17s cubic-bezier(0.4, 0, 0.2, 1),
         transform 0.2s;
-    width: 14rem;
-    height: 36rem;
-    margin: 20px 0 20px 3rem;
+    width: 11rem;
+    height: 27rem;
+    margin: 20px 0 20px 30px;
     object-fit: cover;
     object-position: center;
     border-radius: 3px;
@@ -387,12 +392,28 @@ ul {
 
 .hobby_img img.selected {
     margin-left: 1rem;
-    margin-right: auto;
+    /* margin-right: auto; */
     /* 必要に応じてサイズや枠線も調整 */
     /* transition: all 1s; */
-    width: 30rem;
+    width: 23rem;
     border: 4px solid #fff;
     box-shadow: 0 0 10px #0005;
+}
+
+.hobby_img img::after {
+    content: "クリック";
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, 0);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 0.3em 1em;
+    border-radius: 1em;
+    font-size: 1.2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
 }
 
 .hobby_img img:hover {
@@ -408,12 +429,13 @@ ul {
 }
 
 .hobby-desc p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #fff;
     margin-top: 1rem;
     min-height: 2em;
     text-align: left;
     transition: opacity 0.5s;
+    margin-left: 2rem;
     opacity: 1;
 }
 
@@ -427,8 +449,8 @@ ul {
 
 .works img {
     background-color: rgba(111, 111, 107, 0.9);
-    width: 22.8rem;
-    height: 15rem;
+    width: 17.8rem;
+    height: 11rem;
     /* border-radius: 10px; */
     margin: auto;
 }
