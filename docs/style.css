@@ -12,8 +12,8 @@
     font-family: Arial, sans-serif;
     background-color: rgb(178, 178, 178);
     /* background-image: url(../WIN_20250603_15_09_35_Pro.jpg); */
-    background-image: url(../背景.JPG);
-    background-image: url(../img/1750845325733_6e3c6g_2_0.jpg);
+    background-image: url(./背景.JPG);
+    background-image: url(./img/1750845325733_6e3c6g_2_0.jpg);
     background-size: cover;
 }
 
