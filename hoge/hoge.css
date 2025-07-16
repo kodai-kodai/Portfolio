@@ -1,0 +1,445 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    /* 適切なフォーマットを指定 */
+}
+
+/* bodyタグ */
+.color {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(178, 178, 178);
+    /* background-image: url(../WIN_20250603_15_09_35_Pro.jpg); */
+    background-image: url(../背景.JPG);
+    background-image: url(../img/1750845325733_6e3c6g_2_0.jpg);
+    background-size: cover;
+}
+
+
+/* .titleはflexで中央寄せ */
+.title {
+    position: relative;
+    width: 100%;
+    height: 12rem;
+    /* 少し高さを増やすと重なりが見やすい */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+
+/* 2つのタイトルを中央に絶対配置で重ねる */
+#title,
+#hide_title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    text-align: center;
+    font-size: 7.5rem;
+    pointer-events: none;
+    font-family: 'Inter Medium', 'Noto Sans JP', serif;
+
+}
+
+#hide_title {
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    text-shadow: 8px 15px 0 rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    /* optionalだけどより安全 */
+    animation: fadeBehind 1.8s ease-in forwards;
+    animation-delay: 1s;
+
+
+
+}
+
+#title {
+    color: #fff;
+    z-index: 2;
+    animation: floatInMain 1.4s ease-out forwards;
+    animation-delay: 0.3s;
+
+
+
+}
+
+@keyframes floatInMain {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -55%) scale(0.95);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate(-50%, -52%) scale(1.02);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes fadeBehind {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 0.6;
+        visibility: visible;
+        transform: translate(-49%, -50%) scale(1);
+    }
+}
+
+
+
+
+header {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    /* 必要なら適切な高さを設定 */
+    text-align: center;
+}
+
+
+nav {
+    position: fixed;
+    top: 24px;
+    width: 100%;
+    z-index: 10;
+}
+
+nav a {
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-shadow:
+        3px 3px 0 rgba(0, 0, 0, 0.25),
+        -3px 3px 0 rgba(0, 0, 0, 0.25),
+        3px -3px 0 rgba(0, 0, 0, 0.25),
+        -3px -3px 0 rgba(0, 0, 0, 0.25),
+        3px 0px 0 rgba(0, 0, 0, 0.25),
+        -3px 0px 0 rgba(0, 0, 0, 0.25),
+        0px 3px 0 rgba(0, 0, 0, 0.25),
+        0px -3px 0 rgba(0, 0, 0, 0.25);
+}
+
+#header-menu {
+    /*最初はナビゲーションボタンは非表示*/
+    display: none;
+    font-size: 2rem;
+    margin: 0 2rem 0 2rem;
+}
+
+.header_li {
+    padding: 8px;
+    font-size: 3rem;
+    display: block;
+    text-align: left;
+
+}
+
+
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+
+.hamburger {
+    position: fixed;
+    top: 40px;
+    right: 100px;
+    cursor: pointer;
+    width: 60px;
+    height: 100px;
+    z-index: 10;
+}
+
+.hamburger span {
+    /*3本の線を作る*/
+    transition: all .3s;
+    position: absolute;
+    height: 5px;
+    background-color: #fff;
+
+    width: 100%;
+    z-index: 10;
+}
+
+.hamburger span:nth-of-type(1) {
+    /*上の線の位置*/
+    top: 5px;
+}
+
+.hamburger span:nth-of-type(2) {
+    /*真ん中の線の位置*/
+    top: 20px;
+}
+
+.hamburger span:nth-of-type(3) {
+    /*下の線の位置*/
+    top: 35px;
+}
+
+.hamburger.open span:nth-of-type(1) {
+    /*openのとき、上の線を右斜めにする*/
+    top: 10px;
+    transform: translateY(6px) rotate(-33deg);
+}
+
+.hamburger.open span:nth-of-type(2) {
+    /*真ん中の線を消す*/
+    opacity: 0;
+}
+
+.hamburger.open span:nth-of-type(3) {
+    /*下の線を左斜めにする*/
+    top: 22px;
+    transform: translateY(-6px) rotate(33deg);
+}
+
+main {
+    margin-top: 15.2rem;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+section {
+    border-radius: 3px;
+    max-width: 75%;
+    margin: auto;
+
+}
+
+section h2 {
+    font-size: 80px;
+    font-family: 'Inter SemiBold', 'Noto Sans JP', serif;
+}
+
+.sectitle {
+    background-color: rgba(29, 23, 23, 0.8);
+    display: flex;
+    justify-content: center;
+    /* 水平方向の中央揃え */
+    align-items: center;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+}
+
+
+.content {
+    border-top: 5px solid #fff;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    padding-top: 10px;
+    margin-bottom: 13.3rem;
+    /* height: 50rem; */
+    background-color: rgba(111, 111, 107, 0.9);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-family: 'Inter ExtraLight', 'Noto Sans JP', serif;
+    position: relative;
+    display: flex;
+}
+
+
+#skillCon {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+#file_img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    margin: 20px;
+    /* margin-left: 247.55px; */
+    border-radius: 3px;
+}
+
+p,
+ul {
+    text-shadow:
+        2px 2px 0 rgba(0, 0, 0, 0.25),
+        -2px 2px 0 rgba(0, 0, 0, 0.25),
+        2px -2px 0 rgba(0, 0, 0, 0.25),
+        -2px -2px 0 rgba(0, 0, 0, 0.25),
+        2px 0px 0 rgba(0, 0, 0, 0.25),
+        -2px 0px 0 rgba(0, 0, 0, 0.25),
+        0px 2px 0 rgba(0, 0, 0, 0.25),
+        0px -2px 0 rgba(0, 0, 0, 0.25);
+    line-height: 2;
+}
+
+#Profile p {
+    font-size: 2rem;
+    font-family: 'Inter Medium', 'Noto Sans JP', serif;
+    margin: 20px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+#myName {
+    font-size: 5rem;
+}
+
+
+
+.content p,
+ul {
+    font-family: 'Inter Medium', 'Noto Sans JP', serif;
+    text-align: left;
+}
+
+.content p {
+    font-size: 2rem;
+    margin: 2rem 3rem 0 5rem;
+}
+
+.content ul {
+    font-size: 2rem;
+    transition: .3s;
+    /* リストを表示できるようにする */
+    /* overflow: visible; */
+    margin: 2rem 3rem 1rem 30px;
+}
+
+.content li {
+    margin: 15px;
+    position: relative; /* これが基準になる */
+}
+
+
+
+.content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#hoverIcon {
+    position:fixed;         /* 画面上で固定 */
+    top: 32%;                /* 表示位置（調整可） */
+    right: 20%;               /* 表示位置（調整可） */
+    width: 40rem;
+    height: 20rem;
+    opacity: 0;
+    pointer-events: none;    /* マウス操作の邪魔をしない */
+    transition: opacity 0.3s ease;
+    z-index: 100;
+}
+
+
+#atank:hover {
+    color: rgb(14, 156, 99);
+
+}
+
+#atank::after {
+    content: "";
+    display: none !important;
+}
+
+
+
+
+.hobby_img {
+    display: flex;
+    /* margin: auto; */
+    margin-left: 3rem;
+    align-items: center;
+
+}
+
+
+.hobby_img img {
+    cursor: pointer;
+    transition:
+        width 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        border 0.17s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.17s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.2s;
+    width: 14rem;
+    height: 36rem;
+    margin: 20px 0 20px 3rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+}
+
+.hobby_img img.selected {
+    margin-left: 1rem;
+    margin-right: auto;
+    /* 必要に応じてサイズや枠線も調整 */
+    /* transition: all 1s; */
+    width: 30rem;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px #0005;
+}
+
+.hobby_img img:hover {
+    border: 4px solid #ffffff;
+    box-shadow: 0 0 20px #ffffffaa;
+    transform: scale(0.98);
+    /* transition: all 0.4s; */
+    z-index: 2;
+}
+
+.hobby_img img.hide {
+    display: none;
+}
+
+.hobby-desc p {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-top: 1rem;
+    min-height: 2em;
+    text-align: left;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+.works {
+    background-color: rgba(111, 111, 107, 0.9);
+    margin-bottom: 13.3rem;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+}
+
+.works img {
+    background-color: rgba(111, 111, 107, 0.9);
+    width: 22.8rem;
+    height: 15rem;
+    /* border-radius: 10px; */
+    margin: auto;
+}
+
+.works p {
+    text-align: center;
+    margin: 0;
+}
+
+.worksImg {
+    width: 700px;
+    height: 400px;
+    margin: 3rem;
+}

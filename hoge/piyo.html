@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../slick/slick.css">
+    <link rel="stylesheet" href="../slick/slick-theme.css">
+    <link rel="stylesheet" href="./hoge.css">
+    <title>ポートフォリオ</title>
+</head>
+
+<body class="color">
+    <header>
+        <nav>
+            <ul id="header-menu">
+                <li class="header_li"><a href="#Profile">Profile</a></li>
+                <li class="header_li"><a href="#Hobby">Hobby</a></li>
+                <li class="header_li"><a href="#Skill">Skill & Works</a></li>
+                <li class="header_li"><a href="#Qualifications">Qualifications</a></li>
+                <li class="header_li"><a href="./aaa.html">Works(別リンク)</a></li>
+
+            </ul>
+        </nav>
+        <div id="hamburger" class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="title">
+            <h1 id="title">My Portfolio</h1>
+            <h1 id="hide_title">My Portfolio</h1>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="Profile">
+            <div class="sectitle">
+
+                <h2>Profile</h2>
+            </div>
+            <div class="content">
+                <img src="../img/Screenshot_20240813-141028.png" alt="自己紹介" id="file_img">
+                <div>
+                    <p id="myName">三上輝大 (みかみこうだい)</p>
+                    <p>平成17年7月25日生まれ、専門学生</p>
+                    <p>趣味は音楽鑑賞、スポーツ(バド、柔道、野球)、花札、ゲームです。</p>
+                    <p>TOOBOEやSKRYU、稲葉曇といった邦楽が好きでよく聞いています。</p>
+                    <p>猫が好きです。</p>
+                </div>
+            </div>
+        </section>
+        <section id="Hobby">
+            <div class="sectitle">
+                <h2>Hobby</h2>
+            </div>
+            <div class="content">
+                <div class="hobby_img">
+                    <img src="../img/Polish_20240221_213816701.jpg" alt="ねこ">
+
+                    <img src="../img/Polish_20220418_153829461.jpg" alt="戦車">
+
+                    <img src="../img/4868316285447573071.jpg" alt="音楽">
+
+                    <img src="../img/ばど.jpg" alt="バド">
+                </div>
+                <div id="neko-desc" class="hobby-desc">
+                    <p>趣味1つ目:飼い猫の写真を撮る</p>
+                    <p>2021年くらいに庭でずっと鳴いていた子猫を保護してから猫の可愛さに気づいて写真を撮りはじめました。</p>
+                    <p>いつかアルバムにいれて保存したいとおもっています。</p>
+                </div>
+                <div id="tank-desc" class="hobby-desc">
+                    <p>趣味2つ目:プラモデル作成</p>
+                    <p>中学時代からの友人がプラモを作成しており、それに便乗する形でハマりました。元々のモデルの戦車も好きなので、</p>
+                    <p>試行錯誤しながら綺麗に仕立てれるよう頑張っています。</p>
+                    <p>現在作成しているプラモは<a
+                            href="https://www.amazon.co.jp/%E3%82%BF%E3%83%9F%E3%83%A4-%E3%83%9F%E3%83%AA%E3%82%BF%E3%83%AA%E3%83%BC%E3%83%9F%E3%83%8B%E3%83%81%E3%83%A5%E3%82%A2%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-No-68-%E3%82%A4%E3%82%AE%E3%83%AA%E3%82%B9%E9%99%B8%E8%BB%8D-%E3%83%81%E3%83%BC%E3%83%95%E3%83%86%E3%83%B3/dp/B000WNAELK/"
+                            id="atank">この戦車</a>です。</p>
+                </div>
+                <div id="music-desc" class="hobby-desc">
+                    <p>趣味3つ目:音楽鑑賞</p>
+                    <p>KingGnu、米津玄師、稲葉曇、<br>TOOBOE、Mrs、SKRYU<br>に現在ハマってます。</p>
+                    <p>これらに似たアーティストも掘り進めて<br>いるので、いつか全曲入ったプレイリス<br>トを作っていると思います。</p>
+                </div>
+                <div id="bado-desc" class="hobby-desc">
+                    <p>趣味4つ目:スポーツ</p>
+                    <p>バスケ、サッカーなどの球技は得意ではない代わりに、バド、柔道、野球は得意です。</p>
+                    <p>打撃や防御に特化してるので、機動性の高い人があたるとまける可能性がたかくなります。</p>
+                </div>
+
+            </div>
+        </section>
+        <section id="Skill">
+            <div class="sectitle">
+                <h2>Skill & Works</h2>
+            </div>
+            <div class="content" id="skillCon">
+                <ul>
+                    <li><a href="./aaa.html#Python" data-img="../img_works/スクリーンショット 2025-06-19 114857.png">Python
+                            (TKinter)</a></li>
+                    <li><a href="./aaa.html#HTMLCSS"
+                            data-img="../img_works/スクリーンショット 2025-06-19 120253.png">HTML/CSS</a></li>
+                    <li><a href="./aaa.html#Javascript"
+                            data-img="../img_works/スクリーンショット 2025-06-19 120722.png">JavaScript</a></li>
+                    <li>Java (勉強中)</li>
+                    <li>PHP (勉強中)</li>
+                </ul>
+            </div>
+            <img id="hoverIcon" src="" alt="hover icon">
+            <div class="works">
+                <div><img src="../img_works/スクリーンショット 2024-07-26 183440.png" alt="おすすめ紹介">
+                    <p>おすすめ紹介ページ</p>
+                </div>
+                <div><img src="../img_works/スクリーンショット 2025-06-19 120722.png" alt="神経衰弱">
+                    <p>神経衰弱</p>
+                </div>
+                <div><img src="../img_works/スクリーンショット 2025-06-19 114857.png" alt="図書管理システム">
+                    <p>図書管理システム</p>
+                </div>
+                <div><img src="../img_works/スクリーンショット 2025-06-19 120253.png" alt="ポーカーゲーム">
+                    <p>ポーカーゲーム</p>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="Qualifications">
+            <div class="sectitle">
+                <h2>Qualifications</h2>
+
+            </div>
+            <div class="content">
+                <ul>
+                    <li>基本情報技術者試験</li>
+                    <li>情報検定<br>(システムエンジニア認定 / プログラマ認定)</li>
+                    <li>全商簿記検定2級</li>
+                    <li>柔道初段</li>
+                    <li>普通免許</li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 あなたの名前</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../slick/slick.min.js"></script>
+    <script type="text/javascript" src="./huga.js"></script>
+
+</body>
+
+</html>

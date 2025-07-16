@@ -1,0 +1,21 @@
+section{
+    max-width: 90%;
+}
+.content {
+    display: block;
+}
+.nakami {
+    margin-top: 3rem;
+    /* display: flex;    */
+}
+.nakami p {
+    text-align: center;
+
+}
+.nakami img {
+    margin: 0 0 3rem 50px ;
+    width: 48rem;
+    height: 30rem;
+    /* object-fit: contain; */
+}
+/* margin: 上 右 下 左; */
