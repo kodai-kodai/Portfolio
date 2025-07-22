@@ -28,7 +28,7 @@
             </ul>
         </nav>
         <div id="hamburger" class="hamburger">
-            <span></span><span></span><span></span>
+            <label><span></span><span></span><span></span></label>
         </div>
         <div class="title">
             <h1 id="title">My Portfolio</h1>
@@ -38,33 +38,33 @@
     </header>
 
     <main>
-        <section id="Profile">
+        <section id="Profile" class="fadeinSec">
             <div class="sectitle">
 
                 <h2>Profile</h2>
             </div>
             <div class="content">
-                <img src="./img/Screenshot_20240813-141028.png" alt="自己紹介" id="file_img">
+                <img src="./img/Polish_20240221_213544272.jpg" alt="自己紹介" id="file_img">
                 <img src="" alt="">
                 <div>
                     <p id="myName">三上輝大 (みかみこうだい)</p>
-                    <p>平成17年7月25日生まれ、専門学生</p>
+                    <p>平成17年7月25日生まれ　仙台出身、久慈育ち</p>
                     <p>趣味は音楽鑑賞、スポーツ(バド、柔道、野球)、花札、ゲームです。</p>
                     <p>TOOBOEやSKRYU、稲葉曇といった邦楽が好きでよく聞いています。</p>
                     <p>猫が好きです。</p>
                 </div>
             </div>
         </section>
-        <section id="Hobby">
+        <section id="Hobby" class="fadeinSec">
             <div class="sectitle">
                 <h2>Hobby</h2>
             </div>
-            <div class="content">
+            <div class="content" id="hobby_content">
                 <div class="hobby_img">
-                    <img src="./img/Polish_20240221_213816701.jpg" alt="ねこ">
-                    <img src="./img/Polish_20220418_153829461.jpg" alt="戦車">
-                    <img src="./img/4868316285447573071.jpg" alt="音楽">
-                    <img src="./img/ばど.jpg" alt="バド">
+                    <div class="hobby_img_item "><img src="./img/Polish_20240221_213816701.jpg" alt="ねこ"></div>
+                    <div class="hobby_img_item "><img src="./img/Polish_20220418_153829461.jpg" alt="戦車"></div>
+                    <div class="hobby_img_item "><img src="./img/4868316285447573071.jpg" alt="音楽"></div>
+                    <div class="hobby_img_item "><img src="./img/ばど.jpg" alt="バド"></div>
                 </div>
                 <div id="neko-desc" class="hobby-desc">
                     <p>趣味1つ目:飼い猫の写真を撮る</p>
@@ -92,55 +92,60 @@
 
             </div>
         </section>
-        <section id="Skill">
+        <section id="Skill" class="fadeinSec">
             <div class="sectitle">
                 <h2>Skill & Works</h2>
             </div>
             <div class="content" id="skillCon">
                 <ul>
-                    <li><a href="./works.html#Python" data-img="./img_works/スクリーンショット 2025-06-19 114857.png">Python
+                    <li class="linkLi"><a href="./works.html#Python" data-img="./img_works/Screenshot 2025-06-19 114857.png">Python
                             (TKinter)</a></li>
-                    <li><a href="./works.html#HTMLCSS"
-                            data-img="./img_works/スクリーンショット 2025-06-19 120253.png">HTML/CSS</a></li>
-                    <li><a href="./works.html#Javascript"
-                            data-img="./img_works/スクリーンショット 2025-06-19 120722.png">JavaScript</a></li>
-                    <li>Java (勉強中)</li>
-                    <li>PHP (勉強中)</li>
+                    <li class="linkLi"><a href="./works.html#HTMLCSS"
+                            data-img="./img_works/Screenshot 2025-06-19 120253.png">HTML/CSS</a></li>
+                    <li class="linkLi"><a href="./works.html#Javascript"
+                            data-img="./img_works/Screenshot 2025-06-19 120722.png">JavaScript</a></li>
+                    <li class="dummyLi">Java (勉強中)</li>
+                    <li class="dummyLi">PHP (勉強中)</li>
                 </ul>
-                <img id="hoverIcon" src="" alt="hover icon">
-
+                <img id="hoverIconSkill" src="./img/Screenshot111.png" alt="hover icon">
+                <div id="hoverLabelSkill"></div>
             </div>
             <div class="works">
-                <div><img src="./img_works/スクリーンショット 2024-07-26 183440.png" alt="おすすめ紹介">
+                <div><a href="./works.html#html"><img src="./img_works/Screenshot 2025-07-23 014043.png" alt="おすすめ紹介"></a>
                     <p>おすすめ紹介ページ</p>
                 </div>
-                <div><img src="./img_works/スクリーンショット 2025-06-19 120722.png" alt="神経衰弱">
+                <div><a href="./works.html#js"><img src="./img_works/Screenshot 2025-06-19 120722.png" alt="神経衰弱"></a>
                     <p>神経衰弱</p>
                 </div>
-                <div><img src="./img_works/スクリーンショット 2025-06-19 114857.png" alt="図書管理システム">
+                <div><a href="./works.html#python"><img src="./img_works/Screenshot 2025-06-19 114857.png" alt="図書管理システム"></a>
                     <p>図書管理システム</p>
                 </div>
-                <div><img src="./img_works/スクリーンショット 2025-06-19 120253.png" alt="ポーカーゲーム">
+                <div><a href="./works.html#python"><img src="./img_works/Screenshot 2025-06-19 120253.png" alt="ポーカーゲーム"></a>
                     <p>ポーカーゲーム</p>
                 </div>
             </div>
 
 
         </section>
-        <section id="Qualifications">
+        <section id="Qualifications" class="fadeinSec">
             <div class="sectitle">
                 <h2>Qualifications</h2>
 
             </div>
-            <div class="content">
+            <div class="content" id="qualiCon">
                 <ul>
-                    <li>基本情報技術者試験</li>
-                    <li>情報検定<br>(システムエンジニア認定 / プログラマ認定)</li>
-                    <li>全商簿記検定2級</li>
-                    <li>柔道初段</li>
-                    <li>普通免許</li>
-
+                    <li  class="linkLi"><a href="https://www.fe-siken.com/fekakomon.php" target="_blank" data-img="./img/kihonjouhou.png">基本情報技術者試験</a>
+                    </li>
+                    <li  class="linkLi"><a href="https://jken.sgec.or.jp/" target="_blank" data-img="./img/jken.png">情報検定<br>(システムエンジニア認定 / プログラマ認定)</a>
+                    </li>
+                    <li  class="linkLi"><a href="https://zensho.or.jp/examination/bookkeeping/" target="_blank" data-img="./img/boki.png">全商簿記検定2級</a>
+                    </li>
+                    <li  class="linkLi"><a href="https://kdkjudo.org/" target="_blank" data-img="./img/kodokan.png">柔道初段</a></li>
+                    <li  class="linkLi"><a href="https://www.keishicho.metro.tokyo.lg.jp/menkyo/menkyo/annai/futsu/index.html"
+                            target="_blank" data-img="./img/kuruma.png">普通自動車免許</a></li>
                 </ul>
+                <img id="hoverIconQuali" src="./img/Screenshot111.png" alt="hover icon">
+                <div id="hoverLabelQuali"></div>
             </div>
         </section>
     </main>
