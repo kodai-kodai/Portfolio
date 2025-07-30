@@ -13,6 +13,8 @@
     background-color: rgb(178, 178, 178);
     background-image: url(./img/1750845325733_6e3c6g_2_0.jpg);
     background-size: cover;
+    min-width: 1280px;
+    max-width: 1280px;
     /* zoom: 0.7; */
 }
 
@@ -118,7 +120,7 @@ nav {
 }
 
 nav a {
-    margin: 0 auto;
+    margin: 0 auto; 
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -282,6 +284,7 @@ section h2 {
 }
 
 p,
+h3,
 ul {
     text-shadow:
         1.6px 1.6px 0 rgba(0, 0, 0, 0.25),
@@ -296,16 +299,22 @@ ul {
 }
 
 #Profile p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Inter Medium', 'Noto Sans JP', serif;
-    margin: 20px;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin: 10px 20px;
+    line-height: 2rem;
+    /* margin-bottom: 0rem; */
     text-align: left;
 }
 
-#myName {
-    font-size: 4.5rem;
+.profilep {
+    margin-top: 10px;
+}
+
+#myName{ 
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 20px;
 }
 
 
@@ -316,8 +325,8 @@ ul {
     text-align: left;
 }
 
-.content p {
-    font-size: 1.5rem;
+.content p, h3{
+    font-size: 1.2rem;
     margin: 2rem 0 0 5rem;
 }
 
@@ -504,6 +513,7 @@ ul {
         0px -1.6px 0 rgba(0, 0, 0, 0.25);
     font-family: "Inter SemiBold";
     content: "click! \▶";
+    animation: wobble-horizontal 0.8s ease-in-out infinite;
     position: absolute;
     top: 10px;
     right: 202px;
@@ -540,15 +550,21 @@ ul {
 }
 
 /* 趣味紹介文 */
-.hobby-desc p {
+.hobby-desc p{
     font-size: 1.4rem;
     color: #fff;
     margin-top: 1rem;
     min-height: 2em;
+    line-height: 30px;
     text-align: left;
     transition: opacity 0.5s;
     margin-left: 1px;
     opacity: 1;
+}
+.hobby-desc h3{
+    font-size: 1.8rem;
+    text-align: left;  
+    margin-left: 0;
 }
 
 #atank:hover {
@@ -562,7 +578,7 @@ ul {
 }
 
 /* slick実装(skillのスライド画像) */
-.works {
+.worksByIndex {
     background-color: rgba(111, 111, 107, 0.9);
     margin-bottom: 13.3rem;
     border-bottom: 2px solid #000000;
@@ -570,15 +586,14 @@ ul {
     border-left: 2px solid #000000;
 }
 
-.works img {
+.worksByIndex img {
     background-color: rgba(111, 111, 107, 0.9);
     width: 17.8rem;
     height: 11rem;
-    /* border-radius: 10px; */
     margin: auto;
 }
 
-.works p {
+.worksByIndex p {
     text-align: center;
     margin: 0;
 }

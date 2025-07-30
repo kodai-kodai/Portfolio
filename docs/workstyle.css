@@ -1,21 +1,65 @@
-section{
+section {
     max-width: 90%;
 }
+
 .content {
     display: block;
+    margin-top: 0;
 }
-.nakami {
-    margin-top: 3rem;
-    /* display: flex;    */
-}
-.nakami p {
-    text-align: center;
 
+.nakami {
+    margin-top: 10px;
+    display: flex;
 }
-.nakami img {
-    margin: 0 0 3rem 50px ;
-    width: 48rem;
-    height: 30rem;
-    /* object-fit: contain; */
+
+.top {
+    margin-top: 1rem;
 }
+
+.text p {
+    margin-top: 15px;
+}
+
+.nakami p {
+    text-align: left;
+    line-height: 25px;
+}
+.nakami h3 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+
+.pokerimgs img,
+.booksimgs img,
+.htmlimgs img,
+.jsimgs img {
+    margin: 8px 0 8px 90px;
+    width: 400px;
+    height: 20rem;
+    object-fit: contain;
+}
+
+.pokerWorks,
+.booksWorks,
+.htmlWorks,
+.jsWorks {
+    border: none;
+    margin: 2.5rem 0 0 0;
+}
+
+.pokerWorks img,
+.booksWorks img,
+.htmlWorks img,
+.jsWorks img {
+    width: 17.8rem;
+    height: 11rem;
+    margin: auto;
+}
+
+#poker {
+    margin-bottom: 5rem;
+}
+
 /* margin: 上 右 下 左; */

@@ -80,12 +80,82 @@ document.addEventListener('DOMContentLoaded', function () {
     descIds.forEach(id => document.getElementById(id).style.display = 'none');
 });
 
-$('.works').slick({
+$('.worksByIndex').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
 });
+
+
+$('.pokerimgs').slick({
+    slidesToShow: 4.7,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.pokerWorks'
+});
+$('.pokerWorks').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.pokerimgs',
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+});
+
+// 図書管理
+$('.booksimgs').slick({
+    slidesToShow: 4.7,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.booksWorks'
+});
+$('.booksWorks').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.booksimgs',
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+});
+
+// おすすめ紹介
+$('.htmlimgs').slick({
+    slidesToShow: 4.7,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.htmlWorks'
+});
+$('.htmlWorks').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.htmlimgs',
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+});
+
+
+// 神経衰弱
+$('.jsimgs').slick({
+    slidesToShow: 4.7,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.jsWorks'
+});
+$('.jsWorks').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.jsimgs',
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+});
+
 
 
 const hoverIconSkill = document.getElementById("hoverIconSkill");
@@ -96,7 +166,7 @@ const skillLinks = document.querySelectorAll("#skillCon a");
 hoverIconSkill.src = "./img/Screenshot111.png"; // ←初期画像（または空白）
 hoverIconSkill.style.opacity = "1";
 hoverLabelSkill.style.opacity = "1";
-hoverLabelSkill.textContent = "←詳細ページをみる";
+hoverLabelSkill.textContent = "";
 
 
 skillLinks.forEach(link => {
@@ -131,10 +201,10 @@ const hoverLabelQuali = document.getElementById("hoverLabelQuali");
 const qualiLinks = document.querySelectorAll("#qualiCon a");
 
 // 初期状態：枠は表示、画像はデフォルトにしてうっすら
-hoverIconQuali.src = "./img/Screenshot111.png"; // ←初期画像（または空白）
+hoverIconQuali.src = "./img/3Screenshot111.png"; // ←初期画像（または空白）
 hoverIconQuali.style.opacity = "1";
 hoverLabelQuali.style.opacity = "1";
-hoverLabelQuali.textContent = "←詳細ページをみる";
+hoverLabelQuali.textContent = "";
 qualiLinks.forEach(link => {
     link.addEventListener("mouseenter", () => {
         const imgSrc = link.getAttribute("data-img");
@@ -155,7 +225,7 @@ qualiLinks.forEach(link => {
     });
 
     link.addEventListener("mouseleave", () => {
-        hoverIconQuali.src = "./img/Screenshot111.png";  // デフォ画像に戻す
+        hoverIconQuali.src = "./img/3Screenshot111.png";  // デフォ画像に戻す
         hoverIconQuali.style.transform = "scale(1.0001)";
     });
 });
