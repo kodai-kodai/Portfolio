@@ -163,7 +163,7 @@ const hoverLabelSkill = document.getElementById("hoverLabelSkill");
 const skillLinks = document.querySelectorAll("#skillCon a");
 
 // 初期状態：枠は表示、画像はデフォルトにしてうっすら
-hoverIconSkill.src = "./img/Screenshot111.png"; // ←初期画像（または空白）
+hoverIconSkill.src = "./img/Scshot.png"; // ←初期画像（または空白）
 hoverIconSkill.style.opacity = "1";
 hoverLabelSkill.style.opacity = "1";
 hoverLabelSkill.textContent = "";
@@ -189,7 +189,7 @@ skillLinks.forEach(link => {
     });
 
     link.addEventListener("mouseleave", () => {
-        hoverIconSkill.src = "./img/Screenshot111.png";  // デフォ画像に戻す
+        hoverIconSkill.src = "./img/Scshot.png";  // デフォ画像に戻す
         hoverIconSkill.style.transform = "scale(1)";
     });
 });
